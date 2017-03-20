@@ -5,19 +5,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        d = {}
+            
+        nums_dict={}
 
         for i in range(len(nums)):
-            if not nums[i] in d:
-                d[nums[i]] = i
-
-        l = []
-        for i in range(len(nums)):
-            temp = target - nums[i]
-            if temp in d and \
-                            d[temp] != i:
-                l.append(i)
-                l.append(d[temp])
-                break
-
-        return l
+            need=target-nums[i]
+            if need in nums_dict:
+                return [nums_dict[need],i]
+            nums_dict[nums[i]]=i
