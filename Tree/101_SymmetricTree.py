@@ -16,13 +16,9 @@ class Solution(object):
         return self.checkSymmetric(root.left, root.right)
 
     def checkSymmetric(self, left, right):
-        if left==None or right==None:
-            if left==None and right==None:
-                return True
-            else:
-                return False
-        if left.val==right.val:
+        if left==None and right==None:
+            return True
+        if left and right and left.val==right.val:
             return self.checkSymmetric(left.left, right.right) \
                 and self.checkSymmetric(left.right, right.left)
-        else:
-            return False 
+        return False 
