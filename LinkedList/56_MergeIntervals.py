@@ -4,6 +4,10 @@
 #         self.start = s
 #         self.end = e
 
+"""
+1. sort on start values
+2. loop and merge
+"""
 class Solution(object):
     def merge(self, intervals):
         """
