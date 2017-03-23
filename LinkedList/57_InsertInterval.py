@@ -1,3 +1,8 @@
+"""
+Copy non-overlapping intervals to new list while modify the 
+newInterval with overlapping ones.
+"""
+
 class Solution(object):
     def insert(self, intervals, newInterval):
         """
