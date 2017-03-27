@@ -1,3 +1,8 @@
+"""
+1. loop through 0 to n-2
+2. 2 pointers move towards each other from the end of two sides of array
+"""
+
 class Solution(object):
     def threeSum(self, nums):
         """
